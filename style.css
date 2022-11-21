@@ -91,7 +91,7 @@ header .follow a:hover {
   right: 1rem;
   z-index: 10000;
   background: var(--main-color);
-  color: #222222;
+  color: #fff;
   border-radius: 0.5rem;
   padding: 1rem 1.5rem;
   font-size: 3rem;
@@ -550,66 +550,63 @@ padding: 0.5rem 0;
 
 /* portfolio start */
 
-.portfolio .box-container{
-  display: flex;
-  flex-wrap: wrap;
-  gap:1.5rem;
+.portfolio_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
 }
 
-.portfolio .box-container .box{
-  flex:1 1 30rem;
-  height:25rem;
-  position: relative;
-  overflow:hidden;
-  border:1rem solid #222222;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-  background:#222222;
-  border-radius: .5rem;
+.portfolio_item {
+  padding: 1.3rem;
+  border-radius: 1.5rem;
+  border: 1px solid transparent;
+  border: 1px solid var(--main-color);
 }
 
-.portfolio .box-container .box img{
-  height:100%;
-  width:100%;
-  object-fit: cover;
-  border-radius: .5rem;
-  position: relative;
-  z-index: 1;
-}
-
-.portfolio .box-container .box:hover img{
-  height:100%;
-  width:100%;
-}
-
-.portfolio .box-container .box h3{
-  position: absolute;
-  bottom:.5rem; left:1rem;
-  font-size: 2.5rem;
-  color:#302c2c;
-  text-transform: uppercase;
-}
-
-.portfolio .box-container .box .icons{
-  position: absolute;
-  top:1rem; right:1rem;
-}
-
-.portfolio .box-container .box .icons a{
-  display: block;
-  height:4rem;
-  width:4rem;
-  border-radius: .5rem;
-  background: #eee;
-  color:#302c2c;
-  font-size: 1.7rem;
-  line-height: 4rem;
+.portfolio_item h3 {
+  font-size: x-large;
+  margin: 1.2rem 0 2rem;
   text-align: center;
+}
+
+.portfolio_item:hover {
+  border-color: var(--color-primary-variant);
+  background: transparent;
+}
+
+.portfolio_item_image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.portfolio_item_image img{
+  width: 100%;
+}
+
+.demo_button {
+  display: flex;
+  justify-content: center;
   margin-bottom: 1rem;
 }
 
-.portfolio .box-container .box .icons a:hover{
-  background:var(--main-color);
-  color:#222222;
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) ============== .*/
+
+@media screen and (max-width: 1024px) {
+  .portfolio_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) ============== .*/
+
+@media screen and (max-width: 600px) {
+  .portfolio_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* portfolio end */
