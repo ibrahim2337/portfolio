@@ -48,7 +48,8 @@ header {
   top: 0;
   left: 0;
   bottom: 0;
-  background: rgb(49, 49, 49);
+  background:#202e36;
+  background-image:url(/photo/texture.png) ;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -177,13 +178,16 @@ header .follow a:hover {
 
 .hi{
     font-size: x-large;
+    color: #fff;
 }
 .my-name{
     font-size: xx-large;
+    color: #fff;
 }
 .info{
     font-size: large;
     margin-bottom: 15px;
+    color: rgb(255, 255, 255);
 }
 /* .text{
     font-size: small;
@@ -744,6 +748,7 @@ body {
   position: relative;
   width: 100%;
   background: #3586ff;
+  background-image:url(/photo/texture.png) ;
   min-height: 100px;
   padding: 20px 50px;
   display: flex;
@@ -751,6 +756,7 @@ body {
   align-items: center;
   flex-direction: column;
   margin-top: 150px;
+  
 }
 
 .social-icon{
