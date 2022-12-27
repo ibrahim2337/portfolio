@@ -28,8 +28,6 @@ body {
   /* min-height: 100vh; */
   padding-left: 30rem;
   background-color: #08313a;
-  
-  /* background-image: url(/photo/background.png); */
   background-attachment: fixed;
   z-index: -1;
 }
@@ -156,6 +154,8 @@ header .follow a:hover {
   width: 50%;
 }
 
+
+
 .home .image {
   width: 50%;
   display: flex;
@@ -163,10 +163,48 @@ header .follow a:hover {
 }
 
 .home .image img {
-  width: 90%;
+  width: 100%;
+  border-radius: 60%;
+  /* border: 6px solid #ac6c30;
+  outline: 6px solid #3586ff; */
+}
+
+.gradient-border {
+  --borderWidth: 10px;
+  background:#08313a;
+  background-image:url(/photo/texture.png) ;
+  position: relative;
+  border-radius: var(--transition);
+  width: 100%;
+  border-radius: 300px;
+  /* border-top-left-radius: 15px ; */
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
   border-radius: 50%;
-  border: 6px solid #ac6c30;
-  outline: 6px solid #3586ff;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .name{
@@ -522,7 +560,12 @@ padding: 0.5rem 0;
     width: 100%;
     padding: 2rem 1rem;
   }
+  .gradient-border{
+    /* padding: bottom 15px; ; */
+    margin-bottom: 50px;
+  }
 }
+
 
 /* experience end */
 
@@ -627,6 +670,10 @@ padding: 0.5rem 0;
 @media screen and (max-width: 600px) {
   .portfolio_container {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .gradient-border{
+   
+    margin-bottom: 100px;
   }
 }
 
