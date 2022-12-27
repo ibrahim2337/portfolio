@@ -114,7 +114,7 @@ header .follow a:hover {
   left: 0px;
   height: 1rem;
   width: 1rem;
-  background-color: var(--main-color);
+  background-color:#fff;
   pointer-events: none;
   transform: translate(-50%, -50%);
   border-radius: 50%;
@@ -165,7 +165,8 @@ header .follow a:hover {
 .home .image img {
   width: 90%;
   border-radius: 50%;
-  border: 6px solid #3586ff;
+  border: 6px solid #ac6c30;
+  outline: 6px solid #3586ff;
 }
 
 .name{
@@ -203,8 +204,8 @@ header .follow a:hover {
 
 .btn:hover{
     background-color: rgb(255, 255, 255);
-    border-radius: 0px;
     transition: .4s;
+    color: #3586ff;
 }
 
 .cv{
@@ -423,6 +424,7 @@ padding: 0.5rem 0;
 
 .education .box-container .box .content p{
   font-size: 1.5rem;
+  color: #ffffff;
   
 }
 
@@ -465,10 +467,12 @@ padding: 0.5rem 0;
 
 .experience_container > div h4 {
   font-size: large;
+  color:aliceblue;
 }
 
 .experience_container > div .text-light {
   font-size: small;
+  color: #ffffff;
 }
 
 .experience_content {
@@ -672,6 +676,7 @@ padding: 0.5rem 0;
   color: #3586ff;
 }
 .contact_container h5{
+  color: #ffffff;
   font-size: medium;
   font-weight: 500;
 }
