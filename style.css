@@ -89,7 +89,7 @@ header .follow a {
 }
 
 header .follow a:hover {
-  color: var(--main-color);
+  color: red;
 }
 
 #menu-bars {
@@ -594,10 +594,7 @@ padding: 0.5rem 0;
     width: 100%;
     padding: 2rem 1rem;
   }
-  .gradient-border{
-    /* padding: bottom 15px; ; */
-    margin-bottom: 50px;
-  }
+  
 }
 
 
