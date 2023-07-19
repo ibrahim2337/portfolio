@@ -187,7 +187,7 @@ header .follow a:hover {
   left: calc(-1 * var(--borderWidth));
   height: calc(100% + var(--borderWidth) * 2);
   width: calc(100% + var(--borderWidth) * 2);
-  background: linear-gradient(60deg, #ff0000, #011afd, #e5ff00, #fd04dc, #1eff00, #ff7b00, #00ffdd, #01771e);
+  background: linear-gradient(60deg,#f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
   border-radius: calc(2 * var(--borderWidth));
   z-index: -1;
   animation: animatedgradient 3s ease alternate infinite;
@@ -301,7 +301,7 @@ header .follow a:hover {
   left: calc(-1 * var(--borderWidth));
   height: calc(100% + var(--borderWidth) * 2);
   width: calc(100% + var(--borderWidth) * 2);
-  background: linear-gradient(60deg, #ff0000, #011afd, #e5ff00, #fd04dc, #1eff00, #ff7b00, #00ffdd, #01771e);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
   border-radius: calc(2 * var(--borderWidth));
   /* z-index: -1; */
   animation: animategradient 3s ease alternate infinite;
@@ -662,6 +662,7 @@ padding: 0.5rem 0;
   font-size: x-large;
   margin: 1.2rem 0 2rem;
   text-align: center;
+  color: white;
 }
 
 .portfolio_item:hover {
